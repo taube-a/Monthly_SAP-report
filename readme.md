@@ -27,4 +27,5 @@ ____
 ____
 
 ЯП реализации автоматизации: Python
+
 Библиотеки: openpyxl, pandas, datetime, os, re
