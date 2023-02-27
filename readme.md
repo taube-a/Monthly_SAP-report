@@ -1,5 +1,4 @@
-# Автоматизия составления отчёта
-____
+# Автоматизия составления отчёта (Python)
 
 ### Задача
 
@@ -22,13 +21,35 @@ ____
 В конце отчёта должны находиться 2 строки с согласованием отчёта. 
 
 Пример изначального файла - "example.xlsx"
-Пример ежемесячного отчёта - "Список проблем SAP на 28.03.2022 - SAP issues list on 28.03.2022"
-
 ____
 
-ЯП реализации автоматизации: Python
+**Библиотеки**: datetime, os, openpyxl, pandas
 
-Библиотеки: openpyxl, pandas, datetime, os, re
-____
+**Установка**:
+1. Клонирование репозитория;
 
-**Код должен запускаться из папки, где находится изначальный файл для формирования отчёта.**
+2. Создание и активация виртуального окружения:
+```
+MacOS:
+
+python3 -m venv <venv_name>
+
+source <venv_name>/bin/activate
+
+python3 -m pip install --upgrade pip
+
+Windows:
+
+python -m venv <venv_name> 
+
+source <venv_name>/Scripts/activate
+
+python -m pip install --upgrade pip
+```
+
+3. Установить зависимости из файла requirements.txt:
+```
+pip install -r requirements.txt
+```
+
+4. Запустить код из папки, где находится изначальный файл для формирования отчёта.
